@@ -2,70 +2,46 @@ import { useState } from "react";
 
 const steps = [
   { 
-    title: "Week 4 - Driving Car Game",
-    description: "Welcome to today's Scratch lesson! We're going to build a fun driving game together. Get ready!",
-    image: "images/first.png"
+    title: "Week 7 - Pingpong Star Catch Game",
+    description: "Today, we'll make a pingpong star catch game!",
+    image: "/images/first.png"
   },
   {
     title: "Key programming concepts",
-    description: "Today, we'll cover the following key programming concepts: Forever loop, if touching, and more.",
-    image: "images/title-page.png"
+    description: "Today, we'll cover nested loops, clone, and OR operator.",
+    image: "/images/title-page.png"
   },
   {
     title: "Seating Chart",
-    description: "Please check your seat and make sure you're in the right place. Password is 'a1234a'",
-    image: "images/seating-chart.png"
+    description: "Please check your seat and make sure you're in the right place.",
+    image: "/images/seating-chart.png"
   },
   {
-    title: "Step 1: Open Scratch",
-    description: "Please share the start file I provided at the studio Week4. My Stuff -> My Studio -> Week4 -> Start File",
-    image: "images/step1.png"
+    title: "Step 1: Open Scratch and remix today's start project(week7)",
+    description: "Please share the start file I provided at the studio Week7. My Stuff -> My Studio -> Week7 -> Start File",
+    image: "/images/step1.png"
   },
   {
-    title: "Step 2: Check the Project Assets",
-    description: "All sprites and backdrops are provided. Today's backdrop is 'white road' and two sprites are 'car' and 'obstacle'.",
-    image: "images/step2.png"
+    title: "Step 2: Check the rule of the game",
+    description: "Please check the rule of the game.",
+    image: "/images/step2.png"
   },
   {
-    title: "Step 3: Explore the Obstacle Sprite",
-    description: "Click on the 'Obstacle' sprite. Observe how it interacts with the car.",
-    image: "images/step4.png" 
+    title: "Step 3: Let's start coding with the ball sprite",
+    description: "The Ball waits until the space key is pressed, then starts moving in a random direction. It keeps moving and bounces off the screen edges. When it touches the Paddle or a Star, it bounces back and plays a 'Boing' sound.",
+    image: "/images/ball.png" 
   },
   {
-    title: "Step 4: Understand the Car Sprite",
-    description: "Look at the code blocks in the car sprite. I gave you reset code of the car sprite.Try to understand that you have to code to make the car move by arrow keys and what would happen if the car touches the obstacle or the road.",
-    image: "images/step3.png"
+    title: "Step 4: Let's code for the star sprite",
+    description:"The Star sprite starts hidden and creates 30 colorful clones arranged in a grid. Each clone appears with a random color effect and waits to be touched by the Ball. When the Ball touches a Star, the Star disappears and the score increases by 1.",
+    image: "/images/star-1.png"
   },
   {
-    title: "Step 4-1: Basic structure of the Car Sprite",
-    description: "Always start with basic structure of the sprite.",
-    image: "images/step4-1.png"
+    title: "Step 5: Test your game and share to the studio week7",
+    description: "Dont forget to add your project to the studio week7.",
+    image: "/images/step5.png"
   },
-  {
-    title: "Step 4-2: Make the car move by arrow keys",
-    description: "Make the car move by arrow keys. You can use 'if key pressed' blocks to make the car move by arrow keys.",
-    image: "images/step4-2.png"
-  },
-  {
-    title: "Step 4-3: Detect collision",
-    description: "Detect collision between the car and the obstacle. You can use 'if touching' blocks to detect collision.",
-    image: "images/step4-3.png"
-  },
-  {
-    title: "Step 5: Driving car & Detect Collision",
-    description: "Make the car move using arrow keys, then check how the car sprite uses 'if touching Obstacle' blocks to detect collisions. Don't forget to to put the right codes into the forever loop on the left.",
-    image: "images/step5.png"
-  },
-  {
-    title: "Step 6: Explore Backdrops",
-    description: "Look at the different backdrops for each level and find the code that switches them.",
-    image: "images/step6.png"
-  },
-  {
-    title: "Step 7: Test Your Game",
-    description: "Click the green flag and test your driving game. Make sure the car moves, avoids obstacles, and the backdrops switch properly. Then please upload to the studio Week4.",
-    image: "images/step7.png"
-  }
+  
 ];
 
 export default function ScratchGameTutorial() {
