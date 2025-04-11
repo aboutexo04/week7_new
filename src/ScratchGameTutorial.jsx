@@ -18,27 +18,22 @@ const steps = [
   },
   
   {
-    title: "Step 1: Open Scratch and remix today's start project(week7)",
-    description: "Please share the start file I provided at the studio Week7. My Stuff -> My Studio -> Week7 -> Start File",
-    image: "/images/step1.png"
-  },
-  {
-    title: "Step 2: Pseudocode for the paddle sprite",
+    title: "Step 1: Pseudocode for the paddle sprite",
     description: "Let's code the Paddle sprite.",
     image: "/images/paddle.png"
   },
   {
-    title: "Step 3: Pseudocode for the game rule(ball sprite)",
+    title: "Step 2: Pseudocode for the game rule(ball sprite)",
     description:"Let's code for the rule of the game.",
     image: "/images/game_rule.png" 
   },
   {
-    title: "Step 4: Pseudocode for the ball sprite",
+    title: "Step 3: Pseudocode for the ball sprite",
     description:"Let's code for the movement of the ball.",
     image: "/images/ball_movement.png"
   },
   {
-    title: "Step 5: Test your game and share it to the studio week7",
+    title: "Step 4: Test your game and share it to the studio week7",
     description: "We will finish the rest of the game next week.",
     image: "/images/step5.png"
   },
