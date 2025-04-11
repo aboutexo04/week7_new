@@ -9,7 +9,7 @@ const steps = [
   {
     title: "Seating Chart",
     description: "Please check your seat and make sure you're in the right place.",
-    image: "/images/week7_seating-chart.png"
+    image: "/images/week7_seating_chart.png"
   },
   {
     title: "Let's learn on psuedocode",
