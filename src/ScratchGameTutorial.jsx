@@ -7,38 +7,39 @@ const steps = [
     image: "/images/first.png"
   },
   {
-    title: "Key programming concepts",
-    description: "Today, we'll cover nested loops, clone, and OR operator.",
-    image: "/images/title-page.png"
-  },
-  {
     title: "Seating Chart",
     description: "Please check your seat and make sure you're in the right place.",
-    image: "/images/seating-chart.png"
+    image: "/images/week7_seating-chart.png"
   },
+  {
+    title: "Let's learn on psuedocode",
+    description: "What is psuedocode? Pseudocode is a way to plan out your code using plain language. It helps you think through the logic before you start coding.",
+    image: "/images/pseudocode.jpg"
+  },
+  
   {
     title: "Step 1: Open Scratch and remix today's start project(week7)",
     description: "Please share the start file I provided at the studio Week7. My Stuff -> My Studio -> Week7 -> Start File",
     image: "/images/step1.png"
   },
   {
-    title: "Step 2: Check the rule of the game",
-    description: "Please check the rule of the game.",
-    image: "/images/step2.png"
+    title: "Step 2: Pseudocode for the paddle sprite",
+    description: "Let's code the Paddle sprite.",
+    image: "/images/paddle.png"
   },
   {
-    title: "Step 3: Let's start coding with the ball sprite",
-    description: "The Ball waits until the space key is pressed, then starts moving in a random direction. It keeps moving and bounces off the screen edges. When it touches the Paddle or a Star, it bounces back and plays a 'Boing' sound.",
-    image: "/images/ball.png" 
+    title: "Step 3: Pseudocode for the game rule(ball sprite)",
+    description:"Let's code for the rule of the game.",
+    image: "/images/game_rule.png" 
   },
   {
-    title: "Step 4: Let's code for the star sprite",
-    description:"The Star sprite starts hidden and creates 30 colorful clones arranged in a grid. Each clone appears with a random color effect and waits to be touched by the Ball. When the Ball touches a Star, the Star disappears and the score increases by 1.",
-    image: "/images/star-1.png"
+    title: "Step 4: Pseudocode for the ball sprite",
+    description:"Let's code for the movement of the ball.",
+    image: "/images/ball_movement.png"
   },
   {
-    title: "Step 5: Test your game and share to the studio week7",
-    description: "Dont forget to add your project to the studio week7.",
+    title: "Step 5: Test your game and share it to the studio week7",
+    description: "We will finish the rest of the game next week.",
     image: "/images/step5.png"
   },
   
