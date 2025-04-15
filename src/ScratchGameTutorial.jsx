@@ -4,40 +4,42 @@ const steps = [
   { 
     title: "Week 7 - Pingpong Star Catch Game",
     description: "Today, we'll make a pingpong star catch game!",
-    image: "/images/first.png"
+    images: ["/images/first.png"]
   },
   {
     title: "Seating Chart",
     description: "Please check your seat and make sure you're in the right place.",
-    image: "/images/week7_seating_chart.png"
+    images: ["/images/week7_seating_chart.png"]
   },
   {
-    title: "Let's learn on psuedocode",
-    description: "What is psuedocode? Pseudocode is a way to plan out your code using plain language. It helps you think through the logic before you start coding.",
-    image: "/images/pseudocode.jpg"
+    title: "Let's learn on pseudocode",
+    description: "What is pseudocode? Pseudocode is a way to plan out your code using plain language. It helps you think through the logic before you start coding.",
+    images: ["/images/pseudocode.jpg"]
   },
-  
   {
     title: "Step 1: Pseudocode for the paddle sprite",
     description: "Let's code the Paddle sprite.",
-    image: "/images/paddle.png"
+    images: ["/images/paddle.png"]
   },
   {
     title: "Step 2: Pseudocode for the game rule(ball sprite)",
-    description:"Let's code for the rule of the game.",
-    image: "/images/game_rule.png" 
+    description: "Let's code for the rule of the game.",
+    images: ["/images/game_rule.png"]
   },
   {
     title: "Step 3: Pseudocode for the ball sprite",
-    description:"Let's code for the movement of the ball.",
-    image: "/images/ball_movement.png"
+    description: "Let's code for the movement of the ball.",
+    images: ["/images/ball_movement.png"]
   },
   {
     title: "Step 4: Test your game and share it to the studio week7",
     description: "We will finish the rest of the game next week.",
-    image: "/images/step5.png"
+    images: ["/images/step5.png"]
   },
-  
+  {
+    title: "Step 5: Check all the code",
+    images: ["/images/paddle_block.png","/images/rule_block.png","/images/ball_block.png","/images/star_block.png"]
+  },
 ];
 
 export default function ScratchGameTutorial() {
@@ -52,11 +54,11 @@ export default function ScratchGameTutorial() {
       <div style={styles.card}>
         <h2 style={styles.title}>{step.title}</h2>
         <p style={styles.description}>{step.description}</p>
-        {step.image && (
-          <div style={{ marginBottom: "1.5rem" }}>
+        {step.images && step.images.map((image, index) => (
+          <div key={index} style={{ marginBottom: "1.5rem" }}>
             <img
-              src={`${import.meta.env.BASE_URL}${step.image}`}
-              alt={step.title}
+              src={`${import.meta.env.BASE_URL}${image}`}
+              alt={`${step.title} - Image ${index + 1}`}
               style={{
                 width: "100%",
                 borderRadius: "16px",
@@ -64,7 +66,7 @@ export default function ScratchGameTutorial() {
               }}
             />
           </div>
-        )}
+        ))}
         <div style={styles.buttonRow}>
           <button
             onClick={() => setStepIndex(stepIndex - 1)}
